@@ -28,8 +28,8 @@ services:
    networks:
      - minha-rede
 
-  volumes:
-    postgres-data:
+volumes:
+  postgres-data:
 
-  networks:
-    minha-rede:
+networks:
+  minha-rede:
