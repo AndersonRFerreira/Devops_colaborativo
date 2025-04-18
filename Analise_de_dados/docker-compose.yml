@@ -18,6 +18,16 @@ postgres:
      - postgres-data:/var/lib/postgresql/data
    networks:
      - minha-rede
+
+adminer:
+   image: adminer:latest
+   ports:
+     - "8080:8080"
+   depends_on:
+     - postgres
+   networks:
+     - minha-rede
+     
 volumes:
   postgres-data:
 
